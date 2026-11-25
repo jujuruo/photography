@@ -11,9 +11,13 @@
   let currentId = '';
   let lastTrigger = null;
   const categories = [
-    {name:'静物', english:'Still life', description:'草木、光影与日常的一角。', css:'still'},
-    {name:'人像', english:'Portraits', description:'相遇的人，停留的瞬间。', css:'portrait'}
+    {name:'still-life', label:'Still life', description:'Small details. Quiet places. Everyday light.', css:'still'},
+    {name:'portraits', label:'Portraits', description:'People met. Moments kept.', css:'portrait'}
   ];
+  const categoryLabels = Object.fromEntries(categories.map(cat => [cat.name, cat.label]));
+  filters.forEach(button => {
+    button.querySelector('span').textContent = photos.filter(photo => button.dataset.filter === 'all' || photo.category === button.dataset.filter).length;
+  });
 
   function figure(photo) {
     const el = document.createElement('figure');
@@ -21,7 +25,7 @@
     const link = document.createElement('a');
     link.href = photo.large.src;
     link.dataset.photo = photo.id;
-    link.setAttribute('aria-label', `放大查看：${photo.title}`);
+    link.setAttribute('aria-label', `View photograph: ${photo.title}`);
     const img = document.createElement('img');
     img.src = photo.display.src;
     img.srcset = `${photo.small.src} ${photo.small.width}w, ${photo.display.src} ${photo.display.width}w`;
@@ -35,7 +39,7 @@
     const title = document.createElement('span');
     title.textContent = photo.title;
     const cat = document.createElement('span');
-    cat.textContent = photo.category === '人像' ? 'PORTRAITS' : 'STILL LIFE';
+    cat.textContent = categoryLabels[photo.category].toUpperCase();
     caption.append(title, cat);
     link.append(img);
     el.append(link, caption);
@@ -51,10 +55,7 @@
     heading.className = 'collection-heading';
     const title = document.createElement('h3');
     title.id = `${cat.css}-title`;
-    title.textContent = cat.name;
-    const english = document.createElement('span');
-    english.textContent = cat.english;
-    title.append(english);
+    title.textContent = cat.label;
     const description = document.createElement('p');
     description.textContent = cat.description;
     heading.append(title, description);
@@ -70,24 +71,24 @@
   }
 
   function setFilter(value, updateUrl = true) {
-    active = ['静物','人像'].includes(value) ? value : 'all';
+    active = categories.some(cat => cat.name === value) ? value : 'all';
     work.dataset.active = active;
     filters.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.filter === active)));
     document.querySelectorAll('.collection').forEach(section => {
       section.hidden = active !== 'all' && section.dataset.category !== active;
     });
     const count = visiblePhotos().length;
-    status.textContent = `展示${active === 'all' ? '全部' : active} ${count} 张作品。`;
+    status.textContent = `Showing ${active === 'all' ? 'all' : categoryLabels[active].toLowerCase()}: ${count} photographs.`;
     if (updateUrl) {
       const url = new URL(window.location.href);
       if (active === 'all') url.searchParams.delete('collection');
-      else url.searchParams.set('collection', active === '人像' ? 'portraits' : 'still-life');
+      else url.searchParams.set('collection', active);
       history.replaceState(null, '', url);
     }
   }
   filters.forEach(button => button.addEventListener('click', () => setFilter(button.dataset.filter)));
   const initial = new URLSearchParams(location.search).get('collection');
-  setFilter(initial === 'portraits' ? '人像' : initial === 'still-life' ? '静物' : 'all', false);
+  setFilter(initial, false);
 
   function currentSequence() {
     const list = visiblePhotos();
@@ -100,7 +101,7 @@
     largeImage.src = photo.large.src;
     largeImage.alt = photo.alt;
     document.querySelector('#lightbox-title').textContent = photo.title;
-    document.querySelector('#lightbox-category').textContent = `${photo.category} · Xiao Tu`;
+    document.querySelector('#lightbox-category').textContent = `${categoryLabels[photo.category]} · Xiao Tu`;
     const list = currentSequence();
     document.querySelector('#lightbox-counter').textContent = `${String(list.findIndex(item => item.id === id) + 1).padStart(2,'0')} / ${String(list.length).padStart(2,'0')}`;
     if (!dialog.open) dialog.showModal();

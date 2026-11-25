@@ -1,6 +1,6 @@
 # Xiao Tu Photography
 
-人像、草木与日常光影。
+Portraits, still life, and the light in between. An English-language collection of 18 photographs by Xiao Tu.
 
 Website: https://jujuruo.github.io/photography/
 

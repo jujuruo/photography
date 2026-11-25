@@ -1,9 +1,9 @@
 window.PHOTOGRAPHS = [
   {
     "id": "flowers",
-    "category": "静物",
-    "title": "白花落满枝头",
-    "alt": "白色花簇、绿色枝叶与落满花瓣的地面",
+    "category": "still-life",
+    "title": "Blossom Drift",
+    "alt": "White flower clusters, green branches, and a carpet of fallen petals",
     "width": 3640,
     "height": 5245,
     "small": {
@@ -24,9 +24,9 @@ window.PHOTOGRAPHS = [
   },
   {
     "id": "waterside",
-    "category": "静物",
-    "title": "水边的绿",
-    "alt": "岸边树木与春绿色光影倒映在水面",
+    "category": "still-life",
+    "title": "Waterside Green",
+    "alt": "A tree and green light reflected in the water beside a quiet bank",
     "width": 2260,
     "height": 1694,
     "small": {
@@ -47,9 +47,9 @@ window.PHOTOGRAPHS = [
   },
   {
     "id": "night-bloom",
-    "category": "静物",
-    "title": "夜里开花",
-    "alt": "暗红色夜空下被闪光灯照亮的白色花枝",
+    "category": "still-life",
+    "title": "Night Bloom",
+    "alt": "White flowering branches lit by flash against a dark red night sky",
     "width": 2048,
     "height": 1536,
     "small": {
@@ -70,9 +70,9 @@ window.PHOTOGRAPHS = [
   },
   {
     "id": "ginkgo",
-    "category": "静物",
-    "title": "叶间有光",
-    "alt": "阳光透过层叠的金黄色银杏叶",
+    "category": "still-life",
+    "title": "Light Through Leaves",
+    "alt": "Sunlight shining through layers of golden ginkgo leaves",
     "width": 1887,
     "height": 1415,
     "small": {
@@ -93,9 +93,9 @@ window.PHOTOGRAPHS = [
   },
   {
     "id": "blue-spring",
-    "category": "静物",
-    "title": "蓝色的春天",
-    "alt": "蓝天下交错生长的白色花枝",
+    "category": "still-life",
+    "title": "Blue Spring",
+    "alt": "Interlaced white flowering branches against a blue sky",
     "width": 5568,
     "height": 3712,
     "small": {
@@ -116,9 +116,9 @@ window.PHOTOGRAPHS = [
   },
   {
     "id": "window",
-    "category": "静物",
-    "title": "窗里的黄昏",
-    "alt": "玻璃窗上的树影和一盏暖黄色灯泡",
+    "category": "still-life",
+    "title": "Window Light",
+    "alt": "Reflected trees in a window and a glowing amber light bulb",
     "width": 3712,
     "height": 5568,
     "small": {
@@ -139,9 +139,9 @@ window.PHOTOGRAPHS = [
   },
   {
     "id": "cat",
-    "category": "静物",
-    "title": "午后的旁观者",
-    "alt": "黑白猫卧在窗边，身后是雕像与手写的墙面",
+    "category": "still-life",
+    "title": "An Afternoon Observer",
+    "alt": "A black-and-white cat resting by a window in front of a sculpture and a handwritten wall",
     "width": 2397,
     "height": 3196,
     "small": {
@@ -162,9 +162,9 @@ window.PHOTOGRAPHS = [
   },
   {
     "id": "lotus",
-    "category": "静物",
-    "title": "夏日一角",
-    "alt": "粉色荷花、绿色荷叶与浅色裙摆上的日光",
+    "category": "still-life",
+    "title": "A Corner of Summer",
+    "alt": "Pink lotus flowers, green leaves, and sunlight on a pale skirt",
     "width": 2736,
     "height": 3648,
     "small": {
@@ -185,9 +185,9 @@ window.PHOTOGRAPHS = [
   },
   {
     "id": "room",
-    "category": "静物",
-    "title": "安静的房间",
-    "alt": "陶罐里的细枝绿叶与室内的木椅和灯光",
+    "category": "still-life",
+    "title": "A Quiet Room",
+    "alt": "Fine green branches in a ceramic vessel beside wooden chairs and soft indoor light",
     "width": 2807,
     "height": 3878,
     "small": {
@@ -208,9 +208,9 @@ window.PHOTOGRAPHS = [
   },
   {
     "id": "mountains",
-    "category": "静物",
-    "title": "山在途中",
-    "alt": "三幅山景拼接，包含晴空、车窗外的山和黄昏",
+    "category": "still-life",
+    "title": "Mountains in Passing",
+    "alt": "A three-panel mountain collage with a blue sky, a view from a moving vehicle, and dusk",
     "width": 1080,
     "height": 1440,
     "small": {
@@ -231,9 +231,9 @@ window.PHOTOGRAPHS = [
   },
   {
     "id": "afternoon",
-    "category": "人像",
-    "title": "坐在光里",
-    "alt": "窗边绿植围绕的人像与下方猫咪照片组成的双联画",
+    "category": "portraits",
+    "title": "In the Afternoon Light",
+    "alt": "A diptych of a person seated among window-side plants and a cat below",
     "width": 4936,
     "height": 6581,
     "small": {
@@ -254,9 +254,9 @@ window.PHOTOGRAPHS = [
   },
   {
     "id": "warm-night",
-    "category": "人像",
-    "title": "暖色的夜",
-    "alt": "室内暖色灯光下侧身望向一旁的人像",
+    "category": "portraits",
+    "title": "A Warm Night",
+    "alt": "A side-facing portrait under warm indoor lighting",
     "width": 3000,
     "height": 4000,
     "small": {
@@ -277,9 +277,9 @@ window.PHOTOGRAPHS = [
   },
   {
     "id": "by-the-lotus",
-    "category": "人像",
-    "title": "荷塘边",
-    "alt": "夜色中面向荷塘的人像背影",
+    "category": "portraits",
+    "title": "By the Lotus Pond",
+    "alt": "A portrait from behind, facing a lotus pond at night",
     "width": 1440,
     "height": 1080,
     "small": {
@@ -300,9 +300,9 @@ window.PHOTOGRAPHS = [
   },
   {
     "id": "white-dress",
-    "category": "人像",
-    "title": "光停在这里",
-    "alt": "穿白色长裙坐在木椅上的人像，阳光从一侧照入",
+    "category": "portraits",
+    "title": "Where the Light Pauses",
+    "alt": "A person in a white dress seated on a wooden chair in side light",
     "width": 1206,
     "height": 1663,
     "small": {
@@ -319,6 +319,98 @@ window.PHOTOGRAPHS = [
       "src": "assets/white-dress-large.webp",
       "width": 1206,
       "height": 1663
+    }
+  },
+  {
+    "id": "passing-by",
+    "category": "portraits",
+    "title": "Passing By",
+    "alt": "A person in a dark coat turning back beside a green, tree-lined street",
+    "width": 2127,
+    "height": 2835,
+    "small": {
+      "src": "assets/passing-by-small.webp",
+      "width": 600,
+      "height": 800
+    },
+    "display": {
+      "src": "assets/passing-by-display.webp",
+      "width": 1200,
+      "height": 1600
+    },
+    "large": {
+      "src": "assets/passing-by-large.webp",
+      "width": 1801,
+      "height": 2400
+    }
+  },
+  {
+    "id": "under-the-blossoms",
+    "category": "portraits",
+    "title": "Under the Blossoms",
+    "alt": "A portrait beneath pink flowering branches",
+    "width": 1536,
+    "height": 2048,
+    "small": {
+      "src": "assets/under-the-blossoms-small.webp",
+      "width": 600,
+      "height": 800
+    },
+    "display": {
+      "src": "assets/under-the-blossoms-display.webp",
+      "width": 1200,
+      "height": 1600
+    },
+    "large": {
+      "src": "assets/under-the-blossoms-large.webp",
+      "width": 1536,
+      "height": 2048
+    }
+  },
+  {
+    "id": "late-sun",
+    "category": "portraits",
+    "title": "Late Sun, Open Road",
+    "alt": "A diptych of a sunlit portrait inside a car and traffic seen through the windscreen",
+    "width": 3072,
+    "height": 4096,
+    "small": {
+      "src": "assets/late-sun-small.webp",
+      "width": 600,
+      "height": 800
+    },
+    "display": {
+      "src": "assets/late-sun-display.webp",
+      "width": 1200,
+      "height": 1600
+    },
+    "large": {
+      "src": "assets/late-sun-large.webp",
+      "width": 1800,
+      "height": 2400
+    }
+  },
+  {
+    "id": "cafe-companions",
+    "category": "portraits",
+    "title": "Cafe Companions",
+    "alt": "A diptych of a black-and-white cat on a cafe counter and a seated portrait below",
+    "width": 4580,
+    "height": 6870,
+    "small": {
+      "src": "assets/cafe-companions-small.webp",
+      "width": 533,
+      "height": 800
+    },
+    "display": {
+      "src": "assets/cafe-companions-display.webp",
+      "width": 1067,
+      "height": 1600
+    },
+    "large": {
+      "src": "assets/cafe-companions-large.webp",
+      "width": 1600,
+      "height": 2400
     }
   }
 ];
